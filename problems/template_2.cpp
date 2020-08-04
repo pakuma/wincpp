@@ -115,4 +115,7 @@ inline void OPEN (string s) {
 int main() {}
 #endif
 
-//end of jonathanirvings' template v3.0.3 (BETA)
+void readdata{
+  freopen("input.txt", "r", stdin);
+  freopen("output.txt", "w", stdout);
+}
