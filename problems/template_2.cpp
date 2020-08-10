@@ -22,9 +22,9 @@
 using namespace std;
 
 typedef long long LL;
-typedef pair<int,int> pii;
-typedef pair<LL,LL> pll;
-typedef pair<string,string> pss;
+typedef pair<int, int> pii;
+typedef pair<LL, LL> pll;
+typedef pair<string, string> pss;
 typedef vector<int> vi;
 typedef vector<vi> vvi;
 typedef vector<pii> vii;
@@ -35,17 +35,17 @@ double EPS = 1e-9;
 int INF = 1000000005;
 long long INFF = 1000000000000000005LL;
 double PI = acos(-1);
-int dirx[8] = {-1,0,0,1,-1,-1,1,1};
-int diry[8] = {0,1,-1,0,-1,1,-1,1};
+int dirx[8] = { -1, 0, 0, 1, -1, -1, 1, 1};
+int diry[8] = {0, 1, -1, 0, -1, 1, -1, 1};
 
 #ifdef TESTING
-  #define DEBUG fprintf(stderr,"====TESTING====\n")
-  #define VALUE(x) cerr << "The value of " << #x << " is " << x << endl
-  #define debug(...) fprintf(stderr, __VA_ARGS__)
+#define DEBUG fprintf(stderr,"====TESTING====\n")
+#define VALUE(x) cerr << "The value of " << #x << " is " << x << endl
+#define debug(...) fprintf(stderr, __VA_ARGS__)
 #else
-  #define DEBUG 
-  #define VALUE(x)
-  #define debug(...)
+#define DEBUG
+#define VALUE(x)
+#define debug(...)
 #endif
 
 #define FOR(a,b,c) for (int (a)=(b);(a)<(c);++(a))
@@ -74,41 +74,41 @@ int diry[8] = {0,1,-1,0,-1,1,-1,1};
 #define PERMUTE next_permutation
 #define TC(t) while(t--)
 
-inline string IntToString(LL a){
+inline string IntToString(LL a) {
   char x[100];
-  sprintf(x,"%lld",a); string s = x;
+  sprintf(x, "%lld", a); string s = x;
   return s;
 }
 
-inline LL StringToInt(string a){
+inline LL StringToInt(string a) {
   char x[100]; LL res;
-  strcpy(x,a.c_str()); sscanf(x,"%lld",&res);
+  strcpy(x, a.c_str()); sscanf(x, "%lld", &res);
   return res;
 }
 
-inline string GetString(void){
+inline string GetString(void) {
   char x[1000005];
-  scanf("%s",x); string s = x;
+  scanf("%s", x); string s = x;
   return s;
 }
 
-inline string uppercase(string s){
-  int n = SIZE(s); 
-  REP(i,n) if (s[i] >= 'a' && s[i] <= 'z') s[i] = s[i] - 'a' + 'A';
+inline string uppercase(string s) {
+  int n = SIZE(s);
+  REP(i, n) if (s[i] >= 'a' && s[i] <= 'z') s[i] = s[i] - 'a' + 'A';
   return s;
 }
 
-inline string lowercase(string s){
-  int n = SIZE(s); 
-  REP(i,n) if (s[i] >= 'A' && s[i] <= 'Z') s[i] = s[i] - 'A' + 'a';
+inline string lowercase(string s) {
+  int n = SIZE(s);
+  REP(i, n) if (s[i] >= 'A' && s[i] <= 'Z') s[i] = s[i] - 'A' + 'a';
   return s;
 }
 
 inline void OPEN (string s) {
-  #ifndef TESTING
+#ifndef TESTING
   freopen ((s + ".in").c_str (), "r", stdin);
   freopen ((s + ".out").c_str (), "w", stdout);
-  #endif
+#endif
 }
 
 #ifdef TESTING
@@ -118,4 +118,7 @@ int main() {}
 void readdata{
   freopen("input.txt", "r", stdin);
   freopen("output.txt", "w", stdout);
+  for (int i = 1; i < 10) {
+
+  }
 }
