@@ -27,7 +27,7 @@ int BinarySearch::binarySearchI(vector<int>& nums, int target) {
 	}
 	return -1;
 }
-
+//  Binary Search Template II
 int BinarySearch::binarySearchII(vector<int>& nums, int target) {
 	if (nums.size() == 0)
 		return -1;
@@ -46,7 +46,7 @@ int BinarySearch::binarySearchII(vector<int>& nums, int target) {
 	if (left != nums.size() && nums[left] == target) return left;
 	return -1;
 }
-
+//  Binary Search Template III
 int BinarySearch::binarySearchIII(vector<int>& nums, int target) {
 	if (nums.size() == 0)
 		return -1;
