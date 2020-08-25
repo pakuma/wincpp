@@ -2,9 +2,12 @@
 
 using namespace std;
 
+//Sorting using Bubble Sort and using Comparator Operator
+
 bool compare(int a, int b) {
 	cout << "Compare " << a << " with " << b << endl;
 	return a > b;
+	//for decreasing order we can do a < b;
 }
 
 void bubble_sort(int arr[], int n, bool(&comparator)(int a, int b)) {
