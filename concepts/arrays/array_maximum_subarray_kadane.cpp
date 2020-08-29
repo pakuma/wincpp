@@ -1,7 +1,7 @@
 #include<iostream>
 
 using namespace std;
-
+//Kadane's Algorithm
 int main() {
 	int arr[] = { -4, 1, 3, -2, 16, 2, -8, -9, 4};
 	int n = sizeof(arr) / sizeof(int);
