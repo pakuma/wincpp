@@ -6,6 +6,7 @@ int main() {
 	//here array is iniliazed that is why all values apart from
 	//three {1, 2, 3} have zero values
 	int a[10] = { 1, 2, 3 };
+    //For Loop
 	for (int i = 0; i < 10; i++) {
 		cout << a[i] << endl;
 	}
